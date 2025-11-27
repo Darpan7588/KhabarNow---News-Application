@@ -1,71 +1,154 @@
-# Getting Started with Create React App
+# KhabarNow – React News Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+KhabarNow is a lightweight, category-based news application built with **React** and the official **NewsAPI**. The project is structured using Create React App and focuses on clean UI, fast navigation, and modular component design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+Using the free Api key not let the project to be made live for everyone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📌 Features
 
-### `npm test`
+* Category-wise news (Technology, Sports, Health, etc.)
+* Real-time news fetched from NewsAPI
+* Clean, responsive UI
+* Loading indicators for better UX
+* Environment-based API key handling
+* Optimized React components structure
+* Enbling Light and Dark Theme
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+KhabarNow-NewsApplication
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── index.js
+│   ├── styles/
+│   └── utils/
+└── package.json
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project was bootstrapped with **Create React App**.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone https://github.com/Darpan7588/KhabarNow-NewsApplication.git
+cd KhabarNow-NewsApplication
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Install Dependencies
 
-## Learn More
+```
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Add Your NewsAPI Key
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env` file in the project root:
 
-### Code Splitting
+```
+REACT_APP_NEWS_API_KEY=your_api_key_here
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Start Development Server
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open **[http://localhost:3000](http://localhost:3000)**.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📦 Production Build
 
-### Advanced Configuration
+```
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This generates optimized files in the `build/` folder.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🌐 Deployment (GitHub Pages)
 
-### `npm run build` fails to minify
+1. Add homepage to `package.json`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# KhabarNow
+```
+"homepage": "https://<your-username>.github.io/KhabarNow-NewsApplication"
+```
+
+2. Install gh-pages:
+
+```
+npm install gh-pages --save-dev
+```
+
+3. Add deploy scripts in `package.json`:
+
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
+
+4. Deploy:
+
+```
+npm run deploy
+```
+
+---
+
+## 🧪 Available Scripts (CRA Defaults)
+
+### Development
+
+```
+npm start
+```
+
+### Build
+
+```
+npm run build
+```
+
+### Eject (⚠️ Not reversible)
+
+```
+npm run eject
+```
+
+---
+
+## 📚 Learn More
+
+* React Documentation: [https://reactjs.org/](https://reactjs.org/)
+* BootStrap Documentation: [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* Create React App Docs: [https://facebook.github.io/create-react-app/](https://facebook.github.io/create-react-app/)
+* NewsAPI Docs: [https://newsapi.org/](https://newsapi.org/)
+
+---
+
+Some Snippets of the Website:
+
+<img width="1919" height="1020" alt="Screenshot 2025-11-27 171512" src="https://github.com/user-attachments/assets/42e14a53-9f73-40cc-b19a-a34e5a6d3059" />
+
+
+<img width="1919" height="1017" alt="Screenshot 2025-11-27 171456" src="https://github.com/user-attachments/assets/8e63cd0e-efb6-412b-8f16-5045eb51554c" />
+
